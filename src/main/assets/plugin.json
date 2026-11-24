@@ -1,0 +1,67 @@
+{
+  "id": "ink.zanao.campusreply",
+  "version": "1.0.38",
+  "apiLevel": 6,
+  "minHostVersion": "1.0.8",
+  "entryClass": "ink.zanao.campusreply.CampusReplyPlugin",
+  "name": {
+    "default": "校园集市回复助手",
+    "zh": "校园集市回复助手",
+    "en": "Campus Market Reply Assistant"
+  },
+  "summary": {
+    "default": "自动回复校园集市内容，并订阅精选消息分发到 webhook 或邮箱渠道。",
+    "zh": "自动回复校园集市内容，并订阅精选消息分发到 webhook 或邮箱渠道。",
+    "en": "Automatically reply to campus market content and deliver curated subscriptions through webhooks or email channels."
+  },
+  "description": {
+    "default": "从校园集市 App 的原生会话读取帖子和评论。",
+    "zh": "从校园集市 App 的原生会话读取帖子和评论。",
+    "en": "Read posts and comments from the Campus Market app session."
+  },
+  "homepage": "https://github.com/Sadami3066/DeepDeep-Official-Plugins",
+  "icon": "asset:icon.png",
+  "publisher": {
+    "name": "本地定制 · 校园集市"
+  },
+  "capabilities": [
+    "network",
+    "secrets",
+    "ui",
+    "background",
+    "timers",
+    "privilege"
+  ],
+  "provides": {
+    "tools": [
+      "zanao_status",
+      "zanao_thread_list",
+      "zanao_comments",
+      "campus_reply_status",
+      "campus_reply_context",
+      "campus_reply_plan",
+      "campus_reply_yiwen_status",
+      "campus_reply_yiwen_auth",
+      "campus_reply_yiwen_chat",
+      "campus_reply_generate",
+      "campus_reply_publish",
+      "campus_reply_pause",
+      "campus_reply_config",
+      "campus_reply_records",
+      "campus_reply_tick",
+      "campus_reply_featured_tick",
+      "campus_reply_featured_records"
+    ],
+    "skills": [
+      "campus-reply"
+    ],
+    "uiSlots": [],
+    "pages": [
+      "campus-reply-panel"
+    ]
+  },
+  "defaultEnabled": true,
+  "components": {
+    "background": true
+  }
+}
