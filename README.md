@@ -27,11 +27,11 @@
 - 问：`POST {origin}/chat/api/ly-ai-agent/api/mainAgent/yiwen/modelQa/say`（SSE 逐 token 片段，无 SYSTEM 终帧，需累积解析）
 - 续票+换身份：`POST {origin}/chat/tryLoginUserInfo`（裸票 + form 空体）→ `{data:{userId,userName,orgId,tokenId}}`
 - 必带头：`loginUserId` / `loginUserName` / `loginUserOrgId` + 标准浏览器头
-- 完整逆向见 **[yiwen-reverse](https://github.com/)**（协议、签发、差分实验全记录）
+- 完整逆向见 **[yiwen-reverse](https://github.com/shuziyuxingxing-stack/yiwen-reverse)**（协议、签发、差分实验全记录）
 
 ## 校园集市接口速览
 
-- 签名与会话机制、`errno` 语义见 **[zanao-reverse](https://github.com/)**
+- 签名与会话机制、`errno` 语义见 **[zanao-reverse](https://github.com/shuziyuxingxing-stack/zanao-reverse)**
 
 ## 配置要点
 
